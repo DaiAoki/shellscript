@@ -1,10 +1,3 @@
-# self made shellscripts
-
-## git-commend.sh
-### brd
-Gitのローカルブランチを確認しながら一発消去するコマンド。
-`if [[ $line =~ \* ]] ; then` の条件文に、 `staging` とか消されたくないブランチ名を指定したら、そもそも確認すらされずに消されなくなる。
-```
 brd() {
     git branch | while read line
     do
@@ -24,5 +17,3 @@ brd() {
         fi
     done
 }
-```
-
